@@ -47,11 +47,8 @@ function checkWinner() {
 function showWinnerModal(winner) {
     winnerMessage.innerHTML = ''; // Clear any previous content
     const message1 = document.createElement('div');
-    message1.textContent = `You win, Player ${winner}!`;
-    const message2 = document.createElement('div');
-    message2.textContent = 'Refresh page to start a new game';
+    message1.textContent = `Player ${winner} win!`;
     winnerMessage.appendChild(message1);
-    winnerMessage.appendChild(message2);
     winnerModal.style.display = 'flex'; // Show the modal
 }
 
